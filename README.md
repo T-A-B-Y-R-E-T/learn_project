@@ -1,0 +1,22 @@
+### Технологический стек
+| Компонент | Технология | Назначение |
+|-|-|-|
+|**Фронтенд**| HTML5, CSS3, JavaScript| Пользовательский интерфейс |
+|**Стилизация**| Bootstrap 5 | Адаптивный дизайн |
+|**Бэкенд**| Python 3, Flask| Серверная логика |
+|**API**| RESTful API | Обмен данными |
+|**Хранение**| JSON файлы | База данных |
+|**Контроль версий**| Git, GitHub | Управление кодом |
+
+## Быстрый старт
+
+### 1. Предворительные требования 
+- [Python 3.8+](https://www.python.org/downloads/)
+- [Git](https://git-scm.com/downloads)
+- Текстовый редактор (VS Code, Sublime Text, Notepad++)
+- Браузер(Chrome, Firefox, Edge)
+### Установка и запуск
+#### Шаг 1 Клонирование репозитория
+```bash
+git clone https://github.com/T-A-B-Y-R-E-T/learn_project.git
+cd lab01
