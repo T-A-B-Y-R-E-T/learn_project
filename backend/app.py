@@ -3,12 +3,9 @@ from http.cookiejar import debug
 from flask import Flask, jsonify
 from flask_cors import CORS
 import os
-
 app = Flask(__name__)
 
 CORS(app)
-
-
 @app.route('/')
 def home():
     return jsonify({
@@ -19,23 +16,20 @@ def home():
             'GET /health': 'Проверка состояния сервера'
         }
     })
-
-
 @app.route('/health')
 def health_check():
     return jsonfly({'status': 'OK'}), 200
-
 
 if __name__ == '__main__':
     if not os.path.exists("data"):
         os.makedirs("data")
         print("Создана папка 'data'")
 
-    print("=" * 40)
+    print ("=" * 40)
     print("Сервер запущен")
-    print("API доступен по адресу: http://127.0.0.1:5000")
+    print ("API доступен по адресу: http://127.0.0.1:5000")
     print("=" * 40)
 
     app.run(debug=True, host='0.0.0.0', port=5000)
-
+    
     print("работаем")
