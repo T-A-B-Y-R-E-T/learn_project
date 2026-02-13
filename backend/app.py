@@ -1,5 +1,3 @@
-from http.cookiejar import debug
-
 from flask import Flask, jsonify
 from flask_cors import CORS
 import os
@@ -18,7 +16,7 @@ def home():
     })
 @app.route('/health')
 def health_check():
-    return jsonfly({'status': 'OK'}), 200
+    return jsonify({'status': 'OK'}), 200
 
 if __name__ == '__main__':
     if not os.path.exists("data"):
