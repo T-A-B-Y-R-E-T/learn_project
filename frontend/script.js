@@ -1,10 +1,10 @@
-'use strict' ;
+'use strict';
 
-const API_BASE ='http//:localhost:5000'
+const API_BASE = 'http://localhost:5000'
 
-const API_CHECK_INTERVAL = 5000
+const API_CHECK_INTERVAL = 5000;
 
-let apiCheckTimer = null
+let apiCheckTimer = null;
 
 async function checkApiStatus () {
     const statusElement = document.getElementById('api-status')

@@ -17,3 +17,4 @@ env/
 thumbs.db #Только для windows
 
 .idea/
+.idea
