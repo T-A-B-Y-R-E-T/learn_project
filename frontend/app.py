@@ -12,5 +12,6 @@ def index():
         status_data=status_data,
         items=items_data["items"]
     )
-if __name__ == "＿_main＿_":
+
+if __name__ == "__main__":
     app.run(port=5000, debug=True)
